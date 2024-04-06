@@ -1,0 +1,210 @@
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  
+}
+
+.container {
+    width: 100%;
+    max-width: 800px; /* Set a maximum width to prevent the container from becoming too wide on large screens */
+   
+  margin: 0 auto;
+}
+  
+#slider {
+    position: relative; /* Set position relative to allow absolute positioning of the image */
+    height: 400px; /* Set a fixed height for the slider */
+    background-image: url("../images/sliderImage.jpeg");
+    background-position: center; /* Center the background image horizontally */
+    background-size: cover; /* Ensure the background image covers the entire slider */
+   
+}
+#slider img {
+    position: absolute;
+    bottom: -50px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px; /* Set the width to make the image circular */
+    height: 100px; /* Set the height equal to the width */
+    border-radius: 50%; /* Makes the image circular */
+    z-index: 10000000;
+}
+.c1 {
+    background-color: antiquewhite;
+    color: rgb(119, 97, 81);
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Align items vertically */
+    width: 100%;
+    
+}
+
+#language-select {
+    padding: 7px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    appearance: none; /* Remove default arrow icon */
+    background-color: antiquewhite; /* Dropdown background color */
+    cursor: pointer; /* Show pointer cursor on hover */
+}
+.container.c1 i, #language-select option {
+    color: rgb(119, 97, 81);
+    margin-right: 10px; /* Add spacing between icon and select */
+}
+.c2 {
+    text-align: center;
+    background-color: antiquewhite;
+    padding: 1px;
+    width: 100%;
+}
+.c2 h3 {
+    margin-top: 25px;
+    font-weight: bold;
+}
+.icons i {
+    color: rgb(119, 97, 81);
+    font-size: 22px;
+    padding: 8px;
+}
+.c3 {
+  
+    background-color: antiquewhite;
+    width: 100%;
+    
+}
+
+@media (min-width: 768px) {
+    .container.c1, .container.c2, .container.c3,.container.c4 ,.container.c5  {
+        width: 100%;
+    }
+}
+/* }
+
+
+-----------------------------category------------------- */
+
+
+.c4 {
+    background-color: antiquewhite;
+    padding: 20px; /* Add padding for better spacing */
+}
+.c5{
+    background-color: antiquewhite;
+    color: rgb(119, 97, 81);
+    border: none;
+    padding: 30px;
+    margin-top: -18px;
+   
+}
+.categories {
+    position: relative;
+}
+
+.fixed-categories {
+    position: fixed;
+    top: 0;
+    width: 48%;
+    background-color: antiquewhite; /* Adjust background color */
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+.category-links {
+    display: flex;
+    /* flex-wrap: wrap; Allow category links to wrap to next line */
+    justify-content: center; /* Center category links horizontally */
+}
+
+.category-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px; /* Adjust margin for spacing */
+    text-decoration: none;
+    color: black; /* Change link color */
+}
+
+.category-link img {
+    width: 69px; /* Adjust image size */
+    height: 69px; /* Adjust image size */
+    border-radius: 50%; /* Make image circular */
+    margin-bottom: 5px; /* Adjust spacing between image and text */
+}
+
+.category-link.selected-category img {
+    border: 4px solid rgb(119, 97, 81); /* Add border to selected category link */
+}
+
+.category-link span {
+    font-size: 14px; /* Adjust font size */
+    color: rgb(119, 97, 81);
+}
+
+
+/* Media query for responsiveness */
+@media screen and (max-width: 999px) {
+    .fixed-categories {
+        left: 0;
+        width: 100%;
+    }
+
+    .category-link {
+        margin: 5px; /* Adjust margin for spacing on smaller screens */
+    }
+}
+
+.review{
+    color: rgb(119, 97, 81);
+    background-color: white;
+    padding: 16px;
+    border-radius: 27px;
+    border: 1px solid rgb(119, 97, 81);
+}
+
+
+/* Apply the same styles as the index page */
+
+
+
+@media (min-width: 768px) {
+    .container {
+        width: 50%; /* Adjust container width for larger screens */
+    }
+}
+
+
+.whatsapp {
+    right: 5%; /* Adjust the percentage as needed */
+    background-color: rgb(119, 97, 81);
+    border-radius: 50%;
+    bottom: 5%; /* Adjust the percentage as needed */
+    color: white;
+    position: fixed;
+    font-size: 2vw; /* Adjust the font size as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px; /* Adjust the width as needed */
+    height: 60px; /* Adjust the height as needed */
+}
+
+.whatsapp i {
+    font-size: 2.5em; /* Adjust the icon size as needed */
+}
+
+@media (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    .whatsapp {
+        right: 3%;
+        bottom: 3%;
+        font-size: 3vw;
+        width: 50px;
+        height: 50px;
+    }
+
+    .whatsapp i {
+        font-size: 2em;
+    }
+}

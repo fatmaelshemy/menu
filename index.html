@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <---------title------> 
+    <title>Blanca</title>
+    <!-- <Bootstrap> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- fontAwesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+     <!-- style -->
+     <link rel="stylesheet" href="css/style.css">
+
+     <style>
+        .container {
+          position: relative;
+        }
+      
+        .swiper-container {
+          width: 90%;
+          overflow: visible;
+        }
+      
+        .swiper-wrapper {
+          display: flex;
+          transition: transform 0.5s;
+        }
+      
+        .swiper-slide {
+          flex: 0 0 auto;
+          margin-right: 15px;
+          box-sizing: border-box;
+        }
+      
+        .category-link {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          text-decoration: none;
+          color: black;
+        }
+      
+        .category-link img {
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          margin-bottom: 5px;
+        }
+      
+        .category-link span {
+          font-size: 14px;
+          color: rgb(119, 97, 81);
+        }
+      
+        .fixed-categories {
+    position: fixed;
+    top: 0;
+    left: 23%;
+    width: 100%;
+    background-color: antiquewhite; /* Adjust background color */
+    z-index: 1000; /* Ensure it's above other content */
+}
+@media screen and (max-width: 999px) {
+    .fixed-categories {
+        left: 0;
+        width: 100%;
+    }
+
+    .category-link {
+        margin: 5px; /* Adjust margin for spacing on smaller screens */
+    }
+}
+      </style>
+
+
+</head>
+<body>
+    <div class="container">
+        <div id="slider">
+            <img src="images/logo.jpg" alt="">
+        </div>
+    </div>
+    <div class="container c1">
+        <i class="fa-solid fa-globe"></i>
+      
+        <select  id="language-select">
+            <option selected>language</option>
+            <option value="1">English</option>
+            <option value="2">Arabic</option>
+        </select>
+        <i class="fa-solid fa-caret-down"></i>
+    </div>
+      <div class="container c2">
+        <h3>Blanca</h3>
+        <div class="icons">
+          <a>  <i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-solid fa-location-dot"></i></a>
+          <a href="">  <i class=" fas fa-star"></i></a>
+        </div>
+      </div>
+   
+      <div class="container c4 containe">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#Pizza" class="category-link" data-category="pizza">
+                <img src="images/img1.jpg" alt="Pizza">
+                <span>Pizza</span>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#Pasta" class="category-link" data-category="pasta">
+                <img src="images/img2.jpg" alt="Pasta">
+                <span>Pasta</span>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#Oven Pasta" class="category-link" data-category="Oven Pasta">
+                <img src="images/img3 (1).jpg" alt="Oven Pasta">
+                <span>Oven Pasta</span>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#Sharing" class="category-link" data-category="Sharing">
+                <img src="images/img3 (2).jpg" alt="Sharing">
+                <span>Sharing</span>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#Salad" class="category-link" data-category="Salad">
+                <img src="images/img3 (3).jpg" alt="Salad">
+                <span>Salad</span>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#Soups" class="category-link" data-category="Soups">
+                <img src="images/img3 (4).jpg" alt="Soups">
+                <span>Soups</span>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#Sweets" class="category-link" data-category="Sweets">
+                <img src="images/img3 (5).jpg" alt="Sweets">
+                <span>Sweets</span>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#Drinks" class="category-link" data-category="Drinks">
+                <img src="images/img3 (6).jpg" alt="Drinks">
+                <span>Drinks</span>
+              </a>
+            </div>
+            <!-- Add more category slides as needed -->
+          </div>
+        </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+     
+
+
+        <div id="product-container"  class="container c3 ">
+           <!-- //category name here before display product related to this category  -->
+        </div> 
+
+    <div class="card container c5">
+        
+        <p>
+        تنبيه مسببات الحساسية: قد يحتوي الطعام المحضر على المكونات التالية: منتجات الالبان- البيض القمح- الفول السوداني- الجوز والصوية.
+         اذا كنت تعاني من الحساسية من هذه المكونات يرجى نتبيه النادل الخاص بك. شكرا.
+         يحتاج البالغون الى 2000 سعره حرارية في المتوسط ويحتاج الأطفال من هم في سن 4 - 13 من
+         ( 1200 – 1500 )سعرة حرارية في المتوسط يوميا وقد تختلف الاحتياجات الفردية من شخص الى اخر.
+         البيانات التغذوية الاضافية متاحة عند الطلب. الاسعار تشمل ضريبة القيمة المضافة.
+        </p>
+        <div class="card-body">
+         
+          <a href="#" class="btn review">Leave a review</a>
+        </div>
+      </div>
+
+
+      <a class="btn whatsapp" onclick="openWhatsApp()">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    
+   
+   
+   
+   
+   
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+     <!-- <Bootstrap> -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- <json of product> -->
+   <script  type="module" src="js/script.js"></script>
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 'auto',
+    spaceBetween: 15,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+
+  window.addEventListener('scroll', function() {
+    var categories = document.querySelector('.containe');
+    var initialPosition = categories.offsetTop;
+
+    var scrollPosition = window.scrollY || window.pageYOffset;
+
+    if (scrollPosition > initialPosition && !categories.classList.contains('fixed-categories')) {
+      categories.classList.add('fixed-categories');
+    } else if (scrollPosition <= initialPosition && categories.classList.contains('fixed-categories')) {
+      categories.classList.remove('fixed-categories');
+    }
+  });
+</script>
+
+    <script>
+        function openWhatsApp() {
+    // Recipient's phone number
+    var phoneNumber = '+9677742581'; // Replace this with the recipient's actual phone number
+  
+    // Message you want to send
+    var message = encodeURIComponent('السلام عليكم كم سعر التوصيل ؟');
+  
+    // Create the WhatsApp share link with both phone number and message
+    var whatsappLink = 'https://wa.me/' + phoneNumber + '?text=' + message;
+  
+    // Open the WhatsApp link in a new tab
+    window.open(whatsappLink, '_blank');
+  }
+
+
+
+
+   
+    </script>
+</body>
+
+
+</html>
